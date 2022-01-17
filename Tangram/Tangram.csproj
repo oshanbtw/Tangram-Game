@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FDFB82B-5813-46EE-8F77-F6015F55AEF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tangram</RootNamespace>
+    <AssemblyName>Tangram</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDev.Designer.cs">
+      <DependentUpon>frmDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHow.Designer.cs">
+      <DependentUpon>frmHow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmK1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmK1.Designer.cs">
+      <DependentUpon>frmK1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmK2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmK2.Designer.cs">
+      <DependentUpon>frmK2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmK3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmK3.Designer.cs">
+      <DependentUpon>frmK3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKolay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKolay.Designer.cs">
+      <DependentUpon>frmKolay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevel.Designer.cs">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmO1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmO1.Designer.cs">
+      <DependentUpon>frmO1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmO2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmO2.Designer.cs">
+      <DependentUpon>frmO2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmO3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmO3.Designer.cs">
+      <DependentUpon>frmO3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrta.Designer.cs">
+      <DependentUpon>frmOrta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZ1.Designer.cs">
+      <DependentUpon>frmZ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZ2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZ2.Designer.cs">
+      <DependentUpon>frmZ2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZ3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZ3.Designer.cs">
+      <DependentUpon>frmZ3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZor.Designer.cs">
+      <DependentUpon>frmZor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDev.resx">
+      <DependentUpon>frmDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHow.resx">
+      <DependentUpon>frmHow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmK1.resx">
+      <DependentUpon>frmK1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmK2.resx">
+      <DependentUpon>frmK2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmK3.resx">
+      <DependentUpon>frmK3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKolay.resx">
+      <DependentUpon>frmKolay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLevel.resx">
+      <DependentUpon>frmLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmO1.resx">
+      <DependentUpon>frmO1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmO2.resx">
+      <DependentUpon>frmO2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmO3.resx">
+      <DependentUpon>frmO3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrta.resx">
+      <DependentUpon>frmOrta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZ1.resx">
+      <DependentUpon>frmZ1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZ2.resx">
+      <DependentUpon>frmZ2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZ3.resx">
+      <DependentUpon>frmZ3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZor.resx">
+      <DependentUpon>frmZor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Black_triangle.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dj03132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kirmizi-bducgen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bducgenr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bducgen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-1-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bducgenr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kkarer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen2r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelelr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgenr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgenr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kkarer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgenr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-2-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelelr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelelr2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kkarer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgens2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-3-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-1-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paralel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-3-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-1-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oucgen6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kare6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level-3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucgen10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kucgen41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parelel7.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
